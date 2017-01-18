@@ -3,6 +3,15 @@ import { Route, IndexRoute } from 'react-router';
 
 import App from './components/app';
 
+const Greeting = () => {
+	return <div>Hey You!</div>;
+};
+
+
 export default ( 
-	<Route path="/" components={App} />
+	<Route path="/" component={App}>
+		<Route path="greet" component={Greeting}/>
+		<Route path="greet2" component={Greeting}/>
+		<Route path="greet3" component={Greeting}/>
+	</Route>
 );
