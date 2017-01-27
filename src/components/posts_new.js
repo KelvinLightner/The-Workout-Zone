@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 
 class PostsNew extends Component {
 	render() {
-		return {
+		return (
 			<div>Create Form</div>
-		};
+		);
 	}
 }
 
